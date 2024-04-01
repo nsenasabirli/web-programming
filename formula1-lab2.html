@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="https://i.gifer.com/RT7w.gif" type="gif/x-icon" />
+<style>/* Stylesheet 1: */
+body {
+    font: 100% Lucida Sans, Verdana;
+    margin: 20px;
+    line-height: 26px;
+	background-image: url("https://e1.pxfuel.com/desktop-wallpaper/188/611/desktop-wallpaper-charles-leclerc-ferrari-charles-leclerc-2021.jpg");
+    background-size: cover
+    background-repeat: no-repeat; 
+}
+
+.container {
+    xmin-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#top, #sidebar, #bottom, .menuitem {
+    border-radius: 4px;
+    margin: 4px;
+}
+
+#top {
+    background-color: #8b0000;
+    color: #ffffff;
+    padding: 15px;
+}
+
+#menubar {
+    width: 200px;
+    float: left
+}
+
+#main {
+    padding: 10px;
+    margin: 0 210px;
+	color: white;
+}
+
+#sidebar {
+    background-color: #8b0000;
+    color: #ffffff;
+    padding: 10px;
+    width: 180px;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+#bottom {
+    border: 1px solid #d4d4d4;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    line-height: 14px;
+}
+
+#top h1, #top p, #menulist {
+    margin: 0;
+    padding: 0;
+}
+
+.menuitem {
+    background-color: #8b0000;
+    border: 1px solid #d4d4d4;
+    list-style-type: none;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.menuitem:hover {
+    background-color: #8b0000;
+}
+
+.menuitem:first-child {
+   background-color:#8b0000;
+   color: white;
+   font-weight:bold;
+}
+
+a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+@media (max-width: 800px) {
+    #sidebar {
+        width: auto;
+        position: relative;
+    } 
+    #main {
+        margin-right: 0;
+    }    
+       
+}
+
+@media (max-width: 600px) {
+    #menubar {
+        width: auto;
+        float: none;
+    }
+    #main {
+        margin: 0;
+    }    
+}
+</style>
+
+<style>/* Stylesheet 2: */
+body {
+    font-family: Times New Roman;
+    background-color: #00ced1;
+    line-height: 20px;
+	background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/558d3a116426623.6061f19c4620e.png");
+    background-size: cover
+    background-repeat: no-repeat; 
+}
+
+.container {
+    xmin-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#top {
+    color: white;
+    padding: 15px;
+    font-size: 30px;
+    line-height: 26px;    
+}
+
+#top h1 {
+    margin:0;
+    line-height: 50px;
+}
+
+#menubar {
+    width: 190px;
+    float: right;
+}
+
+#main {
+    padding: 10px;
+    background-color: #0000;
+    font: 80% Verdana;
+	color: white;
+}
+
+#main h1, #main h2 {
+    color: #00ced1;
+}
+
+#sidebar {
+    background-color: teal;
+    color: black;
+    padding: 10px;
+}
+
+#bottom {
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    color: #ffffff;
+}
+
+#menulist {
+    padding:0;
+    font: 16px verdana;
+}
+
+.menuitem {
+    width: 155px;
+    background-color: #00ced1;
+    border: 1px solid #d14836;
+    border-radius: 40px;
+    color: white;
+    list-style-type: none;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menuitem:nth-child(2) {
+   background-color:white;
+   color: #00ced1;
+   font-weight:bold;
+}
+
+.menuitem:hover {
+    background-color: black;
+    color: #00ced1;
+}
+
+a {
+    color: #00ced1;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
+
+<style>
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/hd/711454109769113.5fdb3d2f6a795.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: rgba(0, 0, 139, 0.7); 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sidebar {
+    flex: 1 1 250px;
+    background-color: rgba(0, 0, 139, 0.8); 
+    color: #fff;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+#main-content {
+    flex: 2 1 0;
+    background-color: rgba(0, 0, 139, 0.5);
+    padding: 20px;
+}
+
+#menulist {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menuitem {
+    background-color: rgba(178, 34, 34, 0.8); 
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.menuitem:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="container wrapper">
+  <div id="top">
+    <h1>Formula 1 Teams</h1><br>
+    <p>Choose the team</p>
+  </div>
+  <div class="wrapper">
+   <div id="menubar">
+     <ul id="menulist">
+       <li class="menuitem" onclick="reStyle(0)">Scuderia Ferrari
+       <li class="menuitem" onclick="reStyle(1)">Mercedes AMG
+       <li class="menuitem" onclick="reStyle(2)">Red-Bull Racing
+     </ul>
+    </div>
+    <div id="main">
+      <h1 id="teamName"></h1>
+      <p id="teamInfo">
+      </p>
+   </div>
+    <div id="sidebar">
+      <h4>2024 Formula One World Championship</h4>
+      <p>Formula One automobile racing has its roots in the European Grand Prix championships of the 1920s and 1930s.</p>
+    </div>
+  </div>  
+  
+  
+  <div id="bottom">
+    Formula One was first defined in 1946 by the Commission Sportive Internationale (CSI) of the FIA, forerunner of FISA, as the premier single-seater racing category in worldwide motorsport to become effective in 1947. This new "International Formula" was initially known variously as Formula A, Formula I, or Formula 1 with the corresponding "Voiturette" formula being titled Formula B, Formula II, or Formula 2. When the 500cc formula was internationally recognised as Formula 3 in 1950 it was never titled as "Formula C" so the three International Formulae were then "officially" titled Formula 1, Formula 2 and Formula 3.
+  </div>
+</div>
+
+<script>
+function noStyles() {
+    document.styleSheets[0].disabled = true;
+    document.styleSheets[1].disabled = true;
+    document.styleSheets[2].disabled = true;
+}
+
+function reStyle(n) {
+    noStyles();
+    document.styleSheets[n].disabled = false;
+    var teamName = document.getElementById('teamName');
+    var teamInfo = document.getElementById('teamInfo');
+    if (n === 0) {
+        teamName.textContent = "Scuderia Ferrari";
+        teamInfo.textContent = 'Scuderia Ferrari is the racing division of luxury Italian auto manufacturer Ferrari and the racing team that competes in Formula One racing. The team is also known by the nickname "The Prancing Horse" (Italian: il Cavallino Rampante or simply il Cavallino), in reference to their logo. It is the oldest surviving and most successful Formula One team, having competed in every world championship since 1950. The team was founded by Enzo Ferrari, initially to race cars produced by Alfa Romeo. By 1947, Ferrari had begun building its own cars. Among its important achievements outside Formula One are winning the World Sportscar Championship, 24 Hours of Le Mans, 24 Hours of Spa, 24 Hours of Daytona, 12 Hours of Sebring, Bathurst 12 Hour, races for Grand tourer cars, and racing on road courses of the Targa Florio, the Mille Miglia, and the Carrera Panamericana. The team is also known for its passionate support base, known as the tifosi. The Italian Grand Prix at Monza is regarded as the team.';
+    } else if (n === 1) {
+        teamName.textContent = "Mercedes AMG";
+        teamInfo.textContent = "Mercedes-Benz, a brand of the Mercedes-Benz Group, has been involved in Formula One as both team owner and engine manufacturer for various periods since 1954. The current Mercedes-AMG Petronas F1 Team is based in Brackley, England, and possesses a German licence. An announcement was made in December 2020 that Ineos planned to take a one third equal ownership stake alongside the Mercedes-Benz Group and Toto Wolff; this came into effect on 25 January 2022. Mercedes-branded teams are often referred to by the nickname, the Silver Arrows. Before the Second World War, Mercedes-Benz competed in the European Championship, winning three titles. The marque debuted in Formula One in 1954. After winning their first race at the 1954 French Grand Prix, driver Juan Manuel Fangio won another three Grands Prix to win the 1954 Drivers' Championship and repeated this success in 1955. Despite winning two Drivers' Championships, Mercedes-Benz withdrew from motor racing after 1955 in response to the 1955 Le Mans disaster.";
+    } else if (n === 2) {
+        teamName.textContent = "Red-Bull Racing";
+        teamInfo.textContent = "Red Bull Racing, currently competing as Oracle Red Bull Racing and also known simply as Red Bull or RBR, is a Formula One racing team, racing under an Austrian licence and based in the United Kingdom. It is one of two Formula One teams owned by conglomerate Red Bull GmbH, the other being RB Formula One Team. The Red Bull Racing team has been managed by Christian Horner since its formation in 2005. Red Bull had Cosworth engines in 2005 and Ferrari engines in 2006. The team used engines supplied by Renault between 2007 and 2018. During this partnership, they won four successive Drivers' and Constructors' Championship titles from 2010 to 2013, becoming the first Austrian team to win the title. The team began using Honda engines in 2019. The works Honda partnership culminated in 2021 following Red Bull driver Max Verstappen's World Drivers' Championship victory, with Verstappen also winning the championship in 2022 and 2023. Honda left the sport officially after 2021 but is set to continue to supply complete engines from Japan to the team partly under Red Bull Powertrains branding until the end of 2025.";
+    }
+}
+
+function closeBlackdiv() {
+    var blackdiv, stylediv;
+    blackdiv = document.getElementById("blackdiv")
+    blackdiv.parentNode.removeChild(blackdiv);
+    stylediv = document.getElementById("stylediv")
+    stylediv.parentNode.removeChild(stylediv);
+}
+
+function showStyle(n) {
+var div, text, blackdiv;
+blackdiv = document.createElement("DIV");
+blackdiv.setAttribute("style","background-color:#000000;position:absolute;width:100%;height:100%;top:0;opacity:0.5;margin-left:-20px;");
+blackdiv.setAttribute("id","blackdiv");
+blackdiv.setAttribute("onclick","closeBlackdiv()");
+document.body.appendChild(blackdiv);
+div = document.createElement("DIV");
+div.setAttribute("id","stylediv");
+div.setAttribute("style","background-color:#ffffff;padding-left:5px;position:absolute;width:auto;height:auto;top:100px;bottom:50px;left:200px;right:200px;overflow:auto;font-family: monospace; white-space: pre;line-height:16px;");
+text = document.createTextNode(document.getElementsByTagName("STYLE")[n].innerHTML);
+div.appendChild(text);
+document.body.appendChild(div);
+}
+reStyle(0);
+</script>
+</body>
+</html>

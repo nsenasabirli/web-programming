@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+* > * {
+    font-family: "Poppins", cursive;
+}
+
+body{
+    --text-light: rgba(243, 244, 246,0.9);
+    --primary-dark: rgba(55, 65, 81, 1);
+    --secondary-dark: rgba(55, 65, 81, 0.7);
+    --bg-light: rgba(243, 244, 246,0.3);
+    --bg-btn: rgba(67, 56, 202, 0.8);
+
+    background-color: var(--text-light);
+}
+
+body.dark{
+    --text-light : rgba(55, 65, 81, 1);
+    --primary-dark:rgba(243, 244, 246,1);
+    --secondary-dark: rgba(243, 244, 246,0.3);
+    --bg-btn: rgba(219, 233, 29, 0.897);
+    --bg-light: rgba(45, 49, 54, 0.5);
+}
+
+p{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;    
+}
+
+.text-center{
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(auto, 320px));
+    row-gap: 2em;
+    column-gap: 3em;
+    margin: 3em 0;
+}
+
+.grid .flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em 0;
+}
+
+.grid .icon > span{
+    font-size: 4em;
+    color: var(--bg-btn);
+}
+
+.primary-dark{
+    color: var(--primary-dark);
+}
+
+.secondary-dark{
+    color: var(--secondary-dark);
+}
+
+.bg-light{
+    background-color: var(--bg-light)
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    border-radius: 50px;
+    outline: none;
+    background-image: url(https://st4.depositphotos.com/9436578/20433/i/450/depositphotos_204334934-stock-photo-vibrant-mountain-landscape-with-yellow.jpg);
+    background-size: cover;
+}
+
+input[type="checkbox"]::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    background-color: var(--primary-dark);
+    border-radius: 50px;
+}
+
+input[type="checkbox"]:checked:before{
+    transform: translate(100%);
+}
+
+input[type="checkbox"]:checked{
+    background-image: url(https://fotolifeakademi.com/uploads/2023/09/ay-fotografi.jpeg);
+}
+</style>
+<body>   
+    <div class="container">
+        <h1 class="text-center primary-dark">Welcome to Italian<br>Restaurant</h1>
+        <span class="secondary-dark">Our Menu</span>
+
+        <input type="checkbox" id="mode">
+        <div class="grid">
+            <div class="item bg-light">
+                <div class="flex">
+					<h2>Bruschetta</h2>
+						<p class="w3-text-grey">The base recipe for bruschetta is made up of bread, olive oil, tomatoes, basil, garlic, and a few collard greens and spices.  5.50</p><br>
+						<img src="https://www.allrecipes.com/thmb/QSsjryxShEx1L6o0HLer1Nn4jwA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/54165-balsamic-bruschetta-DDMFS-4x3-e2b55b5ca39b4c1783e524a2461634ea.jpg" class="w3-round w3-image w3-opacity-min" width="250" height="200">
+                    </div>
+                    <h2>Crostini</h2>
+						<p class="w3-text-grey">Crostini ( lit. 'little crusts'; sg. : crostino) are an Italian appetizer consisting of small slices of grilled or toasted bread and toppings.  7.00</p><br>
+						<img src="https://www.marthastewart.com/thmb/Mb-4CHqDMZ3AljVh1VlTEwF0-X0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/MSL-340368-simple-crostini-hero-horiz-0823-20b6e1ee4db245afac2057662ed75aec.jpg" class="w3-round w3-image w3-opacity-min" width="250" height="200">
+					<h2>Pasta</h2>
+						<p class="w3-text-grey">Ideal for cacio and pepper, tonnarelli are a type of fresh pasta of long shape with a round section, typical of Lazio and Roman cuisine.  7.50</p><br>
+						<img src="https://insanelygoodrecipes.com/wp-content/uploads/2022/01/Homemade-Pasta-Zucchini-in-a-Plate.jpg" class="w3-round w3-image w3-opacity-min" width="250" height="200">
+					<h3>Risotto</h3>
+						<p class="w3-text-grey">At its most basic, the recipe for risotto includes rice, broth and aromatics. 7.50</p><br>
+						<img src="https://www.foodandwine.com/thmb/AS-OFUQGHy8X5ripT2qpROgSJik=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Risotto-with-Boquerones-and-Fish-Sauce-Caramel-FT-RECIPE0423-bffbb56d78c7484f8f95c6e9156b67bf.jpg" class="w3-round w3-image w3-opacity-min" width="250" height="200">
+     
+					<h3>Ravioli</h3>
+						<p class="w3-text-grey"> Meat or cheese based ravioli (including cappelletti, anolini, etc.) are commonly served in a soup. 8.50</p><br>  
+						<img src="https://www.theclevercarrot.com/wp-content/uploads/2022/09/Homemade-ravioli_.jpg" class="w3-round w3-image w3-opacity-min" width="250" height="200">
+   
+					<h3>Tiramisu</h3>
+						<p class="w3-text-grey">Traditional tiramisu contains ladyfingers (savoiardi), egg yolks, sugar, coffee, mascarpone and cocoa powder. 7.50</p><br>
+						<img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/6BE1C69C-69FB-4957-96EA-D76159076661/Derivates/BA406212-38AE-4EA0-B4D5-591514C21C2D.jpg" class="w3-round w3-image w3-opacity-min" width="250" height="200">
+ 
+
+					<h3>Parmigiano</h3>
+						<p class="w3-text-grey">7.50</p><br>
+						<img src="https://www.travelandleisure.com/thmb/l_2dgcSZqDh-d2Y69CA1zrk7C20=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/parm-cheese-in-italy-PARM0720-f97b629c03bc4cd2a47707842977755d.jpg" class="w3-round w3-image w3-opacity-min" width="250" height="200">
+    </div>
+			  </div>
+            </div>
+        </div>
+
+<script>
+let toggle = document.getElementById("mode");
+
+toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+})
+</script>
+</body>
+</html>
+
+
