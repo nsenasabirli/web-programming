@@ -1,5 +1,7 @@
 # web-programming
 
+Formula 1
+
 ![lab1 html - Opera 4_1_2024 4_18_48 PM](https://github.com/nsenasabirli/web-programming/assets/72200463/6338a266-f2cf-403d-8205-404dbb0eb7b7)
 
 
